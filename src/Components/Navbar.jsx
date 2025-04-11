@@ -17,14 +17,17 @@ function Navbar() {
             <nav>
                 <div className="flex flex-col md:flex-row justify-evenly gap-4 py-6">
                     {/* Sidebar */}
+                    <div className="flex gap-5">
                     <TbLayoutSidebarLeftExpandFilled className="ml-0 text-4xl text-primary" />
-                    <button className="bg-secondary p-2 rounded-lg  flex text-white">
+                    <button className="bg-secondary p-2 rounded-lg  flex text-white  w-1/2 md:w-auto">
                         Browse all categories
                         <IoIosArrowDown className="pt-1 text-2xl" />
                     </button>
+                    </div>
+                
 
                           {/* SEARCH SECTION */}
-                    <div className="flex items-center md:ml-[200px] border-2 border-primary rounded-lg w-full md:max-w-[600px]">
+                    <div className="flex items-center md:ml-[200px] border-2 border-primary rounded-lg md:w-full w-[400px] ml-2 md:max-w-[600px]">
                         <input
                             type="text"
                             placeholder="Search for items..."
@@ -62,67 +65,7 @@ function Navbar() {
                         </button>
                     </section>
 
-                    {/* Menu section */}
-                    {/* <div className="block" id="nav-menu">
-                        <ul className="flex flex-col md:flex-row items-center gap-6 text-gray-600">
-                            <li>
-                                <a
-                                    href=""
-                                    className="py-1 px-3 hover:text-secondary capitalize font-semibold flex gap-1"
-                                >
-                                    <FaFire className="mt-[2px] text-secondary" /> Deals
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="inline-block py-1 px-3 hover:text-secondary capitalize font-semibold"
-                                >
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="py-1 px-3 hover:text-secondary capitalize font-semibold flex gap-1"
-                                >
-                                    Shop <IoIosArrowDown className="pt-1" />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="py-1 px-3 hover:text-secondary capitalize font-semibold flex gap-1"
-                                >
-                                    Product <IoIosArrowDown className="pt-1" />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="inline-block py-1 px-3 hover:text-secondary capitalize font-semibold"
-                                >
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="py-1 px-3 hover:text-secondary capitalize font-semibold flex gap-1"
-                                >
-                                    Vendors <IoIosArrowDown className="pt-1" />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="py-1 px-3 hover:text-secondary capitalize font-semibold flex gap-1"
-                                >
-                                    Pages <IoIosArrowDown className="pt-1" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div> */}
+               
                 </div>
             </nav>
         </>
